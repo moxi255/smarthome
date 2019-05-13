@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="Spaire">#CDCDB4</color>
+    <color name="btn">#449dd5</color>
+    <!-- 常用颜色值 -->
+    <color name="black">#000000</color>
+    <color name="background">#DBDBDB</color>
+    <color name="transparent">#0000</color>
+
+    <!-- 分割线颜色 -->
+    <color name="line_gray">#d8d8d8</color>
+
+    <!-- 主色调 -->
+    <color name="lightgreen">#00C957</color>
+    <color name="green">#39AC69</color>
+    <color name="gray">#3D3E3F</color>
+    <color name="blue">#87CEEB</color>
+    <color name="red">#FF0000</color>
+    <color name="image_graywhite">#eeeef4</color>
+    <color name="text_graywhite">#9b9ba0</color>
+
+    <!-- 图标背景色 -->
+    <color name="image_light">#f99d59</color>
+    <color name="image_curtain">#d9a3c5</color>
+    <color name="image_av">#7678b3</color>
+    <color name="image_air">#d2e3ac</color>
+    <color name="image_camera">#2fa7cc</color>
+    <color name="image_sensor">#95c9d6</color>
+    <color name="image_prosensor">#de849d</color>
+
+    <!-- 弹出框按下样式 -->
+    <drawable name="pressed_bg">#f2f2f2</drawable>
+    <drawable name="nopressed_bg">#fff</drawable>
+
+    <!-- 标题栏返回按钮的背景颜色 -->
+    <drawable name="button_backward_pressed">#00C957</drawable>
+    <drawable name="button_backward_normal">#0000</drawable>
+
+    <color name="lc_bg_color">#efeff4</color>
+    <color name="lc_media_color">#000000</color>
+
+</resources>

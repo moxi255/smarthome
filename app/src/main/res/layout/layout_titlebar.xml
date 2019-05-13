@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_75_dip"
+    android:background="@color/green" >
+
+    <Button
+        android:id="@+id/layout_ti_button_backward"
+        style="@style/Text.Title_Button"
+        android:layout_width="@dimen/dimen_80_dip"
+        android:layout_height="match_parent"
+        android:background="@color/green"
+        android:drawableLeft="@mipmap/back_arrow"
+        android:drawablePadding="@dimen/dimen_6_dip"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/button_back"
+        android:paddingLeft="@dimen/dimen_10_dip"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/layout_ti_text_title"
+        style="@style/Text.Title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/layout_ti_button_forward"
+        style="@style/Text.Title_Button"
+        android:layout_width="@dimen/dimen_80_dip"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/green"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:paddingRight="@dimen/dimen_5_dip"
+        android:visibility="invisible" />
+
+</RelativeLayout>

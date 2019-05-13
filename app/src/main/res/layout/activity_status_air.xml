@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatusAirActivity">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activity_st_ai"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/dimen_100_dip"
+            android:layout_height="@dimen/dimen_180_dip"
+            android:layout_alignTop="@+id/activity_st_ai_tempbt"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/activity_st_ai_tempbt"
+            android:background="@mipmap/status_air_bg1" />
+
+        <Button
+            android:id="@+id/activity_st_ai_tempbt"
+            android:layout_width="@dimen/dimen_300_dip"
+            android:layout_height="@dimen/dimen_180_dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/layout_titlebar"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="52dp"
+            android:background="@mipmap/status_air_bg0" />
+
+        <Button
+            android:id="@+id/activity_st_ai_tempadd"
+            android:layout_width="@dimen/dimen_100_dip"
+            android:layout_height="@dimen/dimen_90_dip"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_alignTop="@+id/imageView1"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/activity_st_ai_tempsub"
+            android:layout_width="@dimen/dimen_100_dip"
+            android:layout_height="@dimen/dimen_90_dip"
+            android:layout_alignBottom="@+id/imageView1"
+            android:layout_alignLeft="@+id/imageView1"
+            android:background="@android:color/transparent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/dimen_420_dip"
+            android:layout_height="@dimen/dimen_90_dip"
+            android:layout_alignLeft="@+id/activity_st_ai_tempbt"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/status_air_bg0" />
+
+        <Button
+            android:id="@+id/activity_st_ai_windspeed"
+            android:layout_width="@dimen/dimen_210_dip"
+            android:layout_height="@dimen/dimen_90_dip"
+            android:layout_alignRight="@+id/imageView2"
+            android:layout_alignTop="@+id/imageView2"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/text_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="@string/text_air1" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/text_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/activity_st_ai_tempadd"
+            android:layout_alignLeft="@+id/activity_st_ai_tempbt"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="16dp"
+            android:text="@string/text_air0" />
+
+        <TextView
+            android:id="@+id/activity_st_ai_text2"
+            style="@style/text_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/activity_st_ai_windspeed"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="34dp" />
+
+        <Button
+            android:id="@+id/activity_st_ai_windire"
+            android:layout_width="@dimen/dimen_210_dip"
+            android:layout_height="@dimen/dimen_90_dip"
+            android:layout_alignRight="@+id/ImageView02"
+            android:layout_alignTop="@+id/ImageView02"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/activity_st_ai_text3"
+            style="@style/text_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/activity_st_ai_windire"
+            android:layout_alignBottom="@+id/activity_st_ai_windire"
+            android:layout_alignLeft="@+id/activity_st_ai_text2" />
+
+        <Button
+            android:id="@+id/activity_st_ai_bt_mod"
+            android:layout_width="@dimen/dimen_100_dip"
+            android:layout_height="@dimen/dimen_100_dip"
+            android:layout_alignLeft="@+id/imageView2"
+            android:layout_below="@+id/ImageView02"
+            android:layout_marginTop="33dp"
+            android:background="@mipmap/status_air_automod" />
+
+        <ImageView
+            android:id="@+id/ImageView02"
+            android:layout_width="@dimen/dimen_420_dip"
+            android:layout_height="@dimen/dimen_90_dip"
+            android:layout_alignLeft="@+id/activity_st_ai_bt_mod"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="31dp"
+            android:background="@mipmap/status_air_bg0" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="@dimen/dimen_50_dip"
+            android:layout_height="@dimen/dimen_50_dip"
+            android:layout_alignLeft="@+id/imageView3"
+            android:layout_below="@+id/imageView3"
+            android:layout_marginTop="60dp"
+            android:src="@mipmap/status_air_windire" />
+
+        <Button
+            android:id="@+id/activity_st_ai_bt_dehu"
+            android:layout_width="@dimen/dimen_100_dip"
+            android:layout_height="@dimen/dimen_100_dip"
+            android:layout_above="@+id/activity_st_ai_text4"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/status_air_manualoff" />
+
+        <Button
+            android:id="@+id/activity_st_ai_bt_onff"
+            android:layout_width="@dimen/dimen_100_dip"
+            android:layout_height="@dimen/dimen_100_dip"
+            android:layout_above="@+id/activity_st_ai_text4"
+            android:layout_alignRight="@+id/activity_st_ai_windire"
+            android:background="@mipmap/status_air_onoff" />
+
+        <TextView
+            android:id="@+id/activity_st_ai_text5"
+            style="@style/text_6"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/activity_st_ai_text6"
+            android:layout_alignBottom="@+id/activity_st_ai_text6"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/activity_st_ai_text4"
+            style="@style/text_6"
+            android:gravity="center"
+            android:layout_width="@dimen/dimen_100_dip"
+            android:layout_height="@dimen/dimen_30_dip"
+            android:layout_alignLeft="@+id/activity_st_ai_bt_mod"
+            android:layout_below="@+id/activity_st_ai_bt_mod" />
+
+        <TextView
+            android:id="@+id/activity_st_ai_text6"
+            style="@style/text_6"
+            android:layout_width="@dimen/dimen_100_dip"
+            android:layout_height="@dimen/dimen_30_dip"
+            android:layout_alignLeft="@+id/activity_st_ai_bt_onff"
+            android:layout_alignTop="@+id/activity_st_ai_text4"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/activity_st_ai_text0"
+            style="@style/text_5"
+            android:layout_width="@dimen/dimen_140_dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/activity_st_ai_tempsub"
+            android:layout_alignBottom="@+id/activity_st_ai_tempsub"
+            android:layout_alignLeft="@+id/textView1"
+            android:gravity="center"
+            android:text="@string/text_air0" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="@dimen/dimen_50_dip"
+            android:layout_height="@dimen/dimen_50_dip"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="19dp"
+            android:src="@mipmap/status_air_windspeed" />
+
+        <TextView
+            android:id="@+id/activity_st_ai_text1"
+            style="@style/text_4"
+            android:layout_width="@dimen/dimen_110_dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignBaseline="@+id/activity_st_ai_text0"
+            android:layout_alignLeft="@+id/textView2"
+            android:text="@string/text_air1" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
