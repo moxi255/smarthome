@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_st_protectsensor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/layout_status_titlebar" />
+
+    <TextView
+        android:id="@+id/textView0"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        android:layout_marginLeft="@dimen/dimen_100_dip"
+        android:layout_marginTop="@dimen/dimen_80_dip"
+        android:gravity="center"
+        android:text="@string/text_prosensor0" />
+
+    <TextView
+        android:id="@+id/activity_st_prose_tv0"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView0"
+        android:layout_marginLeft="@dimen/dimen_30_dip"
+        android:layout_toRightOf="@id/textView0"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView0"
+        android:layout_below="@+id/textView0"
+        android:layout_marginTop="@dimen/dimen_30_dip"
+        android:gravity="center"
+        android:text="@string/text_prosensor1" />
+
+    <TextView
+        android:id="@+id/activity_st_prose_tv1"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView1"
+        android:layout_marginLeft="@dimen/dimen_30_dip"
+        android:layout_toRightOf="@id/textView1"
+        android:gravity="center" />
+    
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="@dimen/dimen_30_dip"
+        android:gravity="center"
+        android:text="@string/text_prosensor2" />
+
+    <TextView
+        android:id="@+id/activity_st_prose_tv2"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView2"
+        android:layout_marginLeft="@dimen/dimen_30_dip"
+        android:layout_toRightOf="@id/textView2"
+        android:gravity="center" />
+    
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="@dimen/dimen_30_dip"
+        android:gravity="center"
+        android:text="@string/text_prosensor3" />
+
+    <TextView
+        android:id="@+id/activity_st_prose_tv3"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView3"
+        android:layout_marginLeft="@dimen/dimen_30_dip"
+        android:layout_toRightOf="@id/textView3"
+        android:gravity="center" />
+    
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="@dimen/dimen_30_dip"
+        android:gravity="center"
+        android:text="@string/text_prosensor4" />
+
+    <TextView
+        android:id="@+id/activity_st_prose_tv4"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView4"
+        android:layout_marginLeft="@dimen/dimen_30_dip"
+        android:layout_toRightOf="@id/textView4"
+        android:gravity="center" />
+    
+    <TextView
+        android:id="@+id/textView5"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="@dimen/dimen_30_dip"
+        android:gravity="center"
+        android:text="@string/text_prosensor5" />
+
+    <TextView
+        android:id="@+id/activity_st_prose_tv5"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView5"
+        android:layout_marginLeft="@dimen/dimen_30_dip"
+        android:layout_toRightOf="@id/textView5"
+        android:gravity="center" />
+    
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="@dimen/dimen_30_dip"
+        android:gravity="center"
+        android:text="@string/text_prosensor6" />
+
+    <TextView
+        android:id="@+id/activity_st_prose_tv6"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView6"
+        android:layout_marginLeft="@dimen/dimen_30_dip"
+        android:layout_toRightOf="@id/textView6"
+        android:gravity="center" />
+    
+    <TextView
+        android:id="@+id/textView7"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="@dimen/dimen_30_dip"
+        android:gravity="center"
+        android:text="@string/text_prosensor7" />
+
+    <TextView
+        android:id="@+id/activity_st_prose_tv7"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView7"
+        android:layout_marginLeft="@dimen/dimen_30_dip"
+        android:layout_toRightOf="@id/textView7"
+        android:gravity="center" />
+    
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_75_dip"
+        android:background="@color/green">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/fragment_scenes_title"
+            style="@style/Text.Title" />
+
+        <ImageView
+            android:id="@+id/fragment_sc_add"
+            android:layout_width="@dimen/dimen_45_dip"
+            android:layout_height="@dimen/dimen_45_dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:clickable="true"
+            android:contentDescription="@string/fragment_scenes_more"
+            android:src="@drawable/plus_outline" />
+
+    </RelativeLayout>
+
+	<com.baoyz.swipemenulistview.SwipeMenuListView
+	   android:id="@+id/fragment_scenes_lv"
+	   android:layout_width="match_parent"
+	   android:layout_height="wrap_content" />
+	
+	<ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:contentDescription="@string/fragment_background" />
+    
+</LinearLayout>

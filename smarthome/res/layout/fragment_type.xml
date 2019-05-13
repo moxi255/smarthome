@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_75_dip"
+        android:background="@color/green">
+
+        <TextView
+            android:id="@+id/fragment_ty_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/fragment_type_title"
+            style="@style/Text.Title" />
+        
+        <Button
+	        android:id="@+id/fragment_ty_back"
+	        style="@style/Text.Title_Button"
+	        android:layout_width="@dimen/dimen_80_dip"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/button_backward_selector"
+	        android:drawableLeft="@drawable/back_arrow"
+	        android:drawablePadding="@dimen/dimen_6_dip"
+	        android:gravity="center"
+	        android:onClick="onClick"
+	        android:text="@string/button_back"
+	        android:paddingLeft="@dimen/dimen_10_dip"
+	        android:visibility="invisible" />
+
+    </RelativeLayout>
+
+	<ListView 
+	   android:id="@+id/fragment_type_lv"
+	   android:layout_width="match_parent"
+	   android:layout_height="wrap_content" />
+	
+	<ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:contentDescription="@string/fragment_background" />
+
+</LinearLayout>

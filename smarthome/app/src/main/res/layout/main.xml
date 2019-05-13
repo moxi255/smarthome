@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:stretchColumns="*">
+
+	<LinearLayout
+		android:layout_width="300dp"
+		android:layout_height="60dp"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_width="100dp"
+			android:layout_height="60dp"
+			android:layout_marginLeft="10dp"
+			android:gravity="center"
+			android:text="当前用户："
+			android:textAllCaps="false"
+			android:textColor="@color/black"
+			android:textSize="20sp" />
+		<TextView
+			android:id="@+id/text_name"
+			android:textColor="@color/btn"
+			android:textSize="20sp"
+			android:gravity="center|left"
+			android:layout_width="240dp"
+			android:layout_height="40dp" />
+	</LinearLayout>
+
+    <TableRow
+		android:layout_marginTop="5dp"
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:gravity="center">
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:onClick="onIVDoor"
+				android:src="@drawable/tv" />
+	        <TextView
+	            android:id="@+id/tvMainDoor"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="状态：关"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+		</LinearLayout>
+		<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:onClick="onIVAir">
+
+	        <ImageView
+	            android:id="@+id/imageView2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/main_air"
+	            android:onClick="onIVAir" />
+	        <TextView
+	            android:id="@+id/tvMainAirTemperature"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="温："
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	        <TextView
+	            android:id="@+id/tvMainAirHumidity"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="湿："
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+		</LinearLayout>
+
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#B7B7B7"/>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:onClick="onIVCurtain">
+	        <ImageView
+	            android:id="@+id/imageView3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/main_curtain"
+	            android:onClick="onIVCurtain" />
+	        <TextView
+	            android:id="@+id/tvMainCurtain"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="状态：关"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:onClick="onIVLamp">
+
+	        <ImageView
+	            android:id="@+id/ivLamp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/main_lamp"
+	            android:onClick="onIVLamp" />
+			<TextView
+				android:id="@+id/tvMainLight"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="状态：关"
+				android:textAppearance="?android:attr/textAppearanceLarge" />
+	    </LinearLayout>
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#B7B7B7"/>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:onClick="onIVConfig">
+	        <ImageView
+	            android:id="@+id/imageView5"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/main_config"
+	            android:onClick="onIVConfig" />
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="网络设置"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:onClick="onIVExit">
+	        <ImageView
+	            android:id="@+id/imageView6"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/main_exit"
+	            android:onClick="onIVExit"/>
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="退出"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+
+    </TableRow>
+  
+</TableLayout>  

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+	   android:id="@+id/activity_sc_ev_list"
+	   android:layout_width="match_parent"
+	   android:layout_height="wrap_content" />
+	
+    <include layout="@layout/layout_line_horizonal"/>
+        
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:background="@color/background"
+        android:contentDescription="@string/fragment_background" />
+    
+       <LinearLayout 
+          android:id="@+id/activity_sc_ev_ok"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dimen_60_dip"
+          android:clickable="true"
+			android:focusable="true"
+			android:background="@drawable/row_selector"
+			android:orientation="vertical" >
+          
+          <TextView 
+              android:layout_width="@dimen/dimen_100_dip"
+              android:layout_height="@dimen/dimen_60_dip"
+              android:gravity="center"
+              android:layout_gravity="center_horizontal"
+              style="@style/text_11"
+              android:text="@string/text_addevent"	/>
+          
+      </LinearLayout>
+    
+	<ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:contentDescription="@string/fragment_background" />
+
+</LinearLayout>

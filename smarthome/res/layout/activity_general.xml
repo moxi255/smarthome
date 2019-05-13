@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@android:color/white"
+	    android:orientation="horizontal" >
+   
+	    <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="@dimen/dimen_90_dip"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="@dimen/dimen_15_dip"
+	        android:gravity="center_vertical"
+	        android:layout_gravity="center_vertical"
+	        android:text="@string/activity_general_tixing"
+	        style="@style/text_7" />
+	    
+	    <Button
+	        android:id="@+id/activity_ge_tixing"
+	        android:layout_width="@dimen/dimen_80_dip"
+	        android:layout_height="@dimen/dimen_50_dip"
+	        android:layout_marginRight="@dimen/dimen_20_dip"
+	        android:layout_marginTop="@dimen/dimen_20_dip"
+	        android:background="@drawable/switch_onoff_selector"
+	        android:focusable="true" />
+	</LinearLayout>
+		
+    <include layout="@layout/layout_line_horizonal" />
+    
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@android:color/white"
+	    android:orientation="horizontal" >
+   
+	    <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="@dimen/dimen_90_dip"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="@dimen/dimen_15_dip"
+	        android:gravity="center_vertical"
+	        android:layout_gravity="center_vertical"
+	        android:text="@string/activity_general_changjing"
+	        style="@style/text_7" />
+	    
+	    <Button
+	        android:id="@+id/activity_ge_tongzhi"
+	        android:layout_width="@dimen/dimen_80_dip"
+	        android:layout_height="@dimen/dimen_50_dip"
+	        android:layout_marginRight="@dimen/dimen_20_dip"
+	        android:layout_marginTop="@dimen/dimen_20_dip"
+	        android:background="@drawable/switch_onoff_selector"
+	        android:focusable="true" />
+	</LinearLayout>
+		
+    <include layout="@layout/layout_line_horizonal" />
+    
+    <Button 
+        android:id="@+id/activity_ge_resetdata"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_90_dip"
+        android:gravity="center"
+        style="@style/text_7"
+        android:text="@string/text_general0"
+        android:background="@drawable/row_selector" />
+	
+    <include layout="@layout/layout_line_horizonal" />
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:contentDescription="@string/fragment_background" />
+    
+
+</LinearLayout>

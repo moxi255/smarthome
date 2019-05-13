@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smarthome.app.activity.MainActivity" >
+
+    <com.githang.viewpagerindicator.IconTabPageIndicator
+        android:id="@+id/indicator"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <View 
+        android:id="@+id/divider"
+        android:layout_above="@id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ababab"/>
+    
+    <com.smarthome.app.widget.CustomViewPager
+        android:id="@+id/view_pager"
+        android:layout_above="@id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_st_se"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/layout_status_titlebar" />
+
+    <TextView
+        android:id="@+id/textView0"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        android:layout_marginLeft="@dimen/dimen_130_dip"
+        android:layout_marginTop="@dimen/dimen_150_dip"
+        android:gravity="center"
+        android:text="@string/text_sensor0" />
+
+    <TextView
+        android:id="@+id/activity_st_se_tv0"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView0"
+        android:layout_marginLeft="@dimen/dimen_30_dip"
+        android:layout_toRightOf="@id/textView0"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView0"
+        android:layout_below="@+id/textView0"
+        android:layout_marginTop="@dimen/dimen_30_dip"
+        android:gravity="center"
+        android:text="@string/text_sensor1" />
+
+    <TextView
+        android:id="@+id/activity_st_se_tv1"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView1"
+        android:layout_marginLeft="@dimen/dimen_30_dip"
+        android:layout_toRightOf="@id/textView1"
+        android:gravity="center" />
+    
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="@dimen/dimen_30_dip"
+        android:gravity="center"
+        android:text="@string/text_sensor2" />
+
+    <TextView
+        android:id="@+id/activity_st_se_tv2"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView2"
+        android:layout_marginLeft="@dimen/dimen_30_dip"
+        android:layout_toRightOf="@id/textView2"
+        android:gravity="center" />
+    
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="@dimen/dimen_30_dip"
+        android:gravity="center"
+        android:text="@string/text_sensor3" />
+
+    <TextView
+        android:id="@+id/activity_st_se_tv3"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView3"
+        android:layout_marginLeft="@dimen/dimen_30_dip"
+        android:layout_toRightOf="@id/textView3"
+        android:gravity="center" />
+    
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="@dimen/dimen_30_dip"
+        android:gravity="center"
+        android:text="@string/text_sensor4" />
+
+    <TextView
+        android:id="@+id/activity_st_se_tv4"
+        style="@style/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView4"
+        android:layout_marginLeft="@dimen/dimen_30_dip"
+        android:layout_toRightOf="@id/textView4"
+        android:gravity="center" />
+    
+</RelativeLayout>

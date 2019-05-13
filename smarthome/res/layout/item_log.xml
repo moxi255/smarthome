@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_110_dip"
+        android:layout_marginBottom="@dimen/dimen_10_dip"
+        android:layout_marginLeft="@dimen/dimen_20_dip"
+        android:layout_marginRight="@dimen/dimen_20_dip"
+        android:layout_marginTop="@dimen/dimen_10_dip"
+        android:background="@drawable/status_av_bt_on" />
+
+    <TextView
+        android:id="@+id/item_lo_context"
+        style="@style/text_3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60_dip"
+        android:layout_marginLeft="@dimen/dimen_45_dip"
+        android:layout_marginRight="@dimen/dimen_45_dip"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/imageView1" />
+
+    <TextView
+        android:id="@+id/item_lo_date"
+        style="@style/text_6"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_20_dip"
+        android:layout_alignLeft="@+id/item_lo_context"
+        android:layout_alignRight="@+id/item_lo_context"
+        android:layout_below="@+id/item_lo_context" />
+
+</RelativeLayout>

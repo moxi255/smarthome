@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_75_dip"
+        android:background="@color/green">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/fragment_setting_title"
+            style="@style/Text.Title"/>
+
+    </RelativeLayout>
+    
+    <include layout="@layout/layout_line_horizonal" />
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_30_dip"
+        android:background="@color/background"
+        android:contentDescription="@string/fragment_background" />
+    
+    <include layout="@layout/layout_line_horizonal" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_120_dip"
+        android:orientation="horizontal">
+        
+        <ImageView 
+	        android:id="@+id/fragment_setting_image0"
+	        android:layout_width="0dp"
+	        android:layout_height="@dimen/dimen_120_dip"
+	        android:contentDescription="@string/fragment_setting_image0_name"
+	        android:src="@drawable/avatar"
+	        android:layout_weight="1"/>
+    
+	    <TextView
+	        android:id="@+id/fragment_setting_tv0"
+	        android:layout_width="0dp"
+	        android:layout_height="@dimen/dimen_120_dip"
+	        android:layout_marginLeft="@dimen/dimen_15_dip"
+	        android:layout_weight="3"
+	        android:gravity="center_vertical"
+	        android:layout_gravity="center_vertical"
+	        android:text="@string/fragment_setting_id_name"
+	        android:textColor="@color/black"
+	        android:textSize="22sp" />
+	    
+	    <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="@dimen/dimen_120_dip"
+	        android:layout_gravity="center_vertical"
+	        android:gravity="center_vertical"
+	        android:layout_weight="2"
+	        android:descendantFocusability="blocksDescendants"
+	        android:text="                 >"
+			android:textSize="20sp"/>
+	    
+    </LinearLayout>
+    
+    <include layout="@layout/layout_line_horizonal" />
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_30_dip"
+        android:background="@color/background"
+        android:contentDescription="@string/fragment_background" />
+    
+    <include layout="@layout/layout_line_horizonal" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <LinearLayout 
+            android:id="@+id/fragment_se_message"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="horizontal" >
+    
+		    <ImageView
+		        android:layout_width="0dp"
+		        android:layout_height="@dimen/dimen_70_dip"
+		        android:layout_gravity="center_vertical"
+		        android:layout_weight="1"
+		        android:src="@drawable/email_outline"
+		        android:contentDescription="@string/imageview" />
+		    
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_height="@dimen/dimen_90_dip"
+		        android:layout_marginLeft="@dimen/dimen_15_dip"
+		        android:layout_weight="3"
+		        android:gravity="center_vertical"
+		        android:layout_gravity="center_vertical"
+		        android:text="@string/activity_message_title"
+		        style="@style/text_2" />
+		    
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_height="@dimen/dimen_60_dip"
+		        android:layout_gravity="center_vertical"
+		        android:gravity="center_vertical"
+		        android:layout_weight="2"
+		        android:descendantFocusability="blocksDescendants"
+		        android:text="                 >"
+				android:textSize="20sp"/>
+		</LinearLayout>
+        
+        <include layout="@layout/layout_line_horizonal" />
+        
+        <LinearLayout 
+            android:id="@+id/fragment_se_log"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="horizontal" >
+    
+		    <ImageView 
+		        android:layout_width="0dp"
+		        android:layout_height="@dimen/dimen_70_dip"
+		        android:layout_gravity="center_vertical"
+		        android:src="@drawable/copy_outline"
+		        android:contentDescription="@string/imageview"
+		        android:layout_weight="1"/>
+		    
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_height="@dimen/dimen_90_dip"
+		        android:layout_marginLeft="@dimen/dimen_15_dip"
+		        android:layout_weight="3"
+		        android:gravity="center_vertical"
+		        android:layout_gravity="center_vertical"
+		        android:text="@string/activity_log_title"
+		        style="@style/text_2" />
+		    
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_height="@dimen/dimen_60_dip"
+		        android:layout_gravity="center_vertical"
+		        android:gravity="center_vertical"
+		        android:layout_weight="2"
+		        android:descendantFocusability="blocksDescendants"
+		        android:text="                 >"
+				android:textSize="20sp"/>
+		</LinearLayout>
+		
+        <include layout="@layout/layout_line_horizonal" />
+        
+        <LinearLayout 
+            android:id="@+id/fragment_se_general"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="horizontal" >
+    
+		    <ImageView 
+		        android:layout_width="0dp"
+		        android:layout_height="@dimen/dimen_70_dip"
+		        android:layout_gravity="center_vertical"
+		        android:src="@drawable/buffer_outline"
+		        android:contentDescription="@string/imageview"
+		        android:layout_weight="1"/>
+		    
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_height="@dimen/dimen_90_dip"
+		        android:layout_marginLeft="@dimen/dimen_15_dip"
+		        android:layout_weight="3"
+		        android:gravity="center_vertical"
+		        android:layout_gravity="center_vertical"
+		        android:text="@string/activity_general_title"
+		        style="@style/text_2" />
+		    
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_height="@dimen/dimen_60_dip"
+		        android:layout_gravity="center_vertical"
+		        android:gravity="center_vertical"
+		        android:layout_weight="2"
+		        android:descendantFocusability="blocksDescendants"
+		        android:text="                 >"
+				android:textSize="20sp"/>
+		</LinearLayout>
+		
+        <include layout="@layout/layout_line_horizonal" />
+        
+        <LinearLayout 
+            android:id="@+id/fragment_se_feedback"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="horizontal" >
+    
+		    <ImageView 
+		        android:layout_width="0dp"
+		        android:layout_height="@dimen/dimen_70_dip"
+		        android:layout_gravity="center_vertical"
+		        android:src="@drawable/compose_outline"
+		        android:contentDescription="@string/imageview"
+		        android:layout_weight="1"/>
+		    
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_height="@dimen/dimen_90_dip"
+		        android:layout_marginLeft="@dimen/dimen_15_dip"
+		        android:layout_weight="3"
+		        android:gravity="center_vertical"
+		        android:layout_gravity="center_vertical"
+		        android:text="@string/activity_feedback_title"
+		        style="@style/text_2" />
+		    
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_height="@dimen/dimen_60_dip"
+		        android:layout_gravity="center_vertical"
+		        android:gravity="center_vertical"
+		        android:layout_weight="2"
+		        android:descendantFocusability="blocksDescendants"
+		        android:text="                 >"
+				android:textSize="20sp"/>
+		</LinearLayout>
+    </LinearLayout>
+    
+    <include layout="@layout/layout_line_horizonal" />
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:contentDescription="@string/fragment_background" />
+    
+</LinearLayout>

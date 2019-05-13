@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/activity_st_cu"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+
+	<include
+		android:id="@+id/include1"
+		layout="@layout/layout_status_titlebar" />
+
+	<Button
+		android:id="@+id/activity_st_cu_bt_open"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/include1"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="25dp"
+		android:background="@drawable/status_curtain_open"
+		android:focusable="true" />
+
+	<Button
+		android:id="@+id/activity_st_cu_bt_stop"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignLeft="@+id/activity_st_cu_bt_open"
+		android:layout_below="@+id/activity_st_cu_bt_open"
+		android:layout_marginTop="40dp"
+		android:background="@drawable/status_curtain_stop"
+		android:focusable="true" />
+
+	<Button
+		android:id="@+id/activity_st_cu_bt_close"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignLeft="@+id/activity_st_cu_bt_stop"
+		android:layout_below="@+id/activity_st_cu_bt_stop"
+		android:layout_marginTop="40dp"
+		android:background="@drawable/status_curtain_close"
+		android:focusable="true" />
+
+	<TextView
+		style="@style/text_4"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignLeft="@+id/textView1"
+		android:layout_below="@+id/activity_st_cu_bt_open"
+		android:gravity="center"
+		android:text="@string/text_curtain_open" />
+
+	<TextView
+		android:id="@+id/textView1"
+		style="@style/text_4"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/activity_st_cu_bt_stop"
+		android:layout_centerHorizontal="true"
+		android:gravity="center"
+		android:text="@string/text_curtain_stop" />
+
+	<TextView
+		style="@style/text_4"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignLeft="@+id/textView1"
+		android:layout_below="@+id/activity_st_cu_bt_close"
+		android:gravity="center"
+		android:text="@string/text_curtain_close" />
+
+</RelativeLayout>
